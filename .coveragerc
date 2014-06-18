@@ -1,0 +1,7 @@
+[run]
+branch = True
+source = specs
+omit = specs/tests/*,specs/openstack/*
+
+[report]
+ignore-errors = True
