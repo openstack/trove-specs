@@ -1,0 +1,154 @@
+..
+ This work is licensed under a Creative Commons Attribution 3.0 Unported
+ License.
+
+ http://creativecommons.org/licenses/by/3.0/legalcode
+
+ Sections of this template were taken directly from the Nova spec
+ template at:
+ https://github.com/openstack/nova-specs/blob/master/specs/template.rst
+..
+
+  This template should be in ReSTructured text. The filename in the git
+  repository should match the launchpad URL, for example a URL of
+  https://blueprints.launchpad.net/trove/+spec/awesome-thing should be named
+  awesome-thing.rst.
+
+  Please do not delete any of the sections in this template.  If you
+  have nothing to say for a whole section, just write: None
+
+=======================
+ Title of the blueprint
+=======================
+
+Include the URL of your launchpad blueprint:
+
+https://blueprints.launchpad.net/trove/+spec/example
+
+Introduction paragraph -- what is the motivation for the blueprint?
+
+Problem description
+===================
+
+A detailed description of the problem.
+
+
+Proposed change
+===============
+
+Here is where you cover the change you propose to make in detail. How do you
+propose to solve this problem?
+
+If this is one part of a larger effort make it clear where this piece ends. In
+other words, what's the scope of this effort?
+
+Configuration
+-------------
+
+Does this impact any configuration files? If so, which ones?
+
+Database
+--------
+
+Does this impact any existing tables? If so, which ones?
+Are the changes forward and backward compatible?
+Be sure to include the expected migration process
+
+Public API
+----------
+
+Does this change any API that an end-user has access to?
+Are there any exceptions in terms of consistency with other APIs?
+
+Internal API
+------------
+
+Does this change any internal messages between API and Task Manager or Task Manager to Guest?
+
+Guest Agent
+-----------
+
+Does this change behavior on the Guest Agent? If so, is it backwards compatible with API and Task Manager?
+
+
+Alternatives
+------------
+
+This is an optional section, where it does apply we'd just like a demonstration
+that some thought has been put into why the proposed approach is the best one.
+
+
+Implementation
+==============
+
+Assignee(s)
+-----------
+
+Who is leading the writing of the code? Or is this a blueprint where you're
+throwing it out there to see who picks it up?
+
+If more than one person is working on the implementation, please designate the
+primary author and contact.
+
+Primary assignee:
+  <launchpad-id or None>
+
+Can list additional ids if they intend on doing substantial implementation work
+on this blueprint.
+
+Milestones
+----------
+
+Target Milestone for completion:
+  eg. Kilo-2
+
+Work Items
+----------
+
+Work items or tasks -- break the feature up into the things that need to be
+done to implement it. Those parts might end up being done by different people,
+but we're mostly trying to understand the timeline for implementation.
+
+
+Dependencies
+============
+
+- Include specific references to specs and/or blueprints in Trove, or in other
+  projects, that this one either depends on or is related to.
+
+- Does this feature require any new library dependencies or code otherwise not
+  included in OpenStack? Or does it depend on a specific version of library?
+
+
+Testing
+=======
+
+Please discuss how the change will be tested. We especially want to know what
+int tests and tempest tests will be added. It is assumed that unit
+test coverage will be added so that doesn't need to be mentioned
+explicitly, but discussion of why you think unit tests are sufficient
+and we don't need to add more tempest tests would need to be included.
+
+
+Documentation Impact
+====================
+
+What is the impact on the docs team of this change? Some changes might require
+donating resources to the docs team to have the documentation updated. Don't
+repeat details discussed above, but please reference them here.
+
+
+References
+==========
+
+Please add any useful references here. You are not required to have any
+references. Moreover, this specification should still make sense when your
+references are unavailable. Examples of what you could include are:
+
+* Links to mailing list or IRC discussions
+
+* Links to notes from a summit session
+
+* Links to relevant research, if appropriate
+
+* Anything else you feel it is worthwhile to refer to
