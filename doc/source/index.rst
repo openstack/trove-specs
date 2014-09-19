@@ -10,7 +10,7 @@ trove-specs Design Specifications
    :glob:
    :maxdepth: 2
 
-   ../../specs/*
+   specs/*
 
 
 trove-specs Repository Information

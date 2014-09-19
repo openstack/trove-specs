@@ -1,9 +1,10 @@
-::
-
-This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-http://creativecommons.org/licenses/by/3.0/legalcode
-
 ..
+ This work is licensed under a Creative Commons Attribution 3.0 Unported
+ License.
+
+ http://creativecommons.org/licenses/by/3.0/legalcode
+..
+
   This template should be in ReSTructured text. The filename in the git
   repository should match the launchpad URL, for example a URL of
   https://blueprints.launchpad.net/trove/+spec/awesome-thing should be named
