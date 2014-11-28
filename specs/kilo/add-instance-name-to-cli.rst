@@ -33,58 +33,68 @@ to use instance-ID or instance-name interchangeably throughtout the CLI.
 Proposed change
 ===============
 
-Allow instance-id or instance-name to be passed in for the following
-commands:
-backup-create
-backup-list-instance
-configuration-attach
-configuration-default
-configuration-detach
-database-create
-database-delete
-database-list
-detach-replica
-delete
-metadata-create
-metadata-delete
-metadata-edit
-metadata-list
-metadata-show
-metadata-update
-resize-flavor
-resize-instance
-resize-volume
-restart
-root-enable
-root-show
-update
-user-create
-user-delete
-user-grant-access
-user-list
-user-revoke-access
-user-show
-user-show-access
-user-update-attributes
+Allow instance-id or instance-name to be passed in for the following commands:
 
-For example, trove delete currently looks like this:
-usage: trove delete <instance>
+- backup-create
+- backup-list-instance
+- configuration-attach
+- configuration-default
+- configuration-detach
+- database-create
+- database-delete
+- database-list
+- detach-replica
+- delete
+- metadata-create
+- metadata-delete
+- metadata-edit
+- metadata-list
+- metadata-show
+- metadata-update
+- resize-flavor
+- resize-instance
+- resize-volume
+- restart
+- root-enable
+- root-show
+- update
+- user-create
+- user-delete
+- user-grant-access
+- user-list
+- user-revoke-access
+- user-show
+- user-show-access
+- user-update-attributes
 
-Deletes an instance.
+For example, ``trove delete`` currently looks like this:
 
-Positional arguments:
-  <instance>  ID of the instance.
+::
+
+    usage: trove delete <instance>
+
+    Deletes an instance.
+
+    Positional arguments:
+        <instance>  ID of the instance.
 
 The proposal is to make it look like this:
-usage: trove delete <instance>
 
-Deletes an instance.
+::
 
-Positional arguments:
-  <instance>  ID or name of the instance.
+    usage: trove delete <instance>
 
+    Deletes an instance.
+
+    Positional arguments:
+        <instance>  ID or name of the instance.
 
 This will be a CLI change only.
+
+Currently the ``trove show`` command will display an error if there is
+more than one instance with the name provided. The error indicates that,
+in this case, the instance ID must be used. This behavior will be preserved
+and used across all the commands mentioned above.
 
 Configuration
 -------------
@@ -123,9 +133,10 @@ Implementation
 Assignee(s)
 -----------
 
-Primary assignee:
-  0-doug (dougshelley66)
-  peterstac
+Primary assignees:
+
+- 0-doug (dougshelley66)
+- peterstac
 
 Milestones
 ----------
