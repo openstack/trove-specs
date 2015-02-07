@@ -69,6 +69,15 @@ Public API
 Does this change any API that an end-user has access to?
 Are there any exceptions in terms of consistency with other APIs?
 
+Public API Security
+-------------------
+
+If this change proposes a new API, or if this change relates to
+security on an existing API, provide details here.
+
+What are the expectations of, and implications to security on the
+Public API.
+
 Internal API
 ------------
 
