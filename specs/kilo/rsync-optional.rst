@@ -33,7 +33,7 @@ Use Cases
 * As a deployer, I want to avoid ssh connectivity between guests and the
   control-plane.
 
-Proposed change
+Proposed Change
 ===============
 
 Add additional elements in trove-integration to stage the guestagent code
@@ -60,6 +60,11 @@ Public API
 ----------
 
 No public API changes.
+
+Public API Security
+-------------------
+
+No public API Security related changes.
 
 Internal API
 ------------

@@ -18,7 +18,7 @@ need for Trove to have a greater control over the customer visibility
 of these datastore types. This change enables Trove to control the
 visibility of the various datastore types.
 
-Problem description
+Problem Description
 ===================
 
 There might be some datastore types, which the deployers require to be
@@ -26,7 +26,7 @@ active but not visible to customers in the production environment.
 Example use case: Say we want to have an active datastore A in production
 and not expose it to customers yet.
 
-Proposed change
+Proposed Change
 ===============
 
 This change suggests adding a visibility attribute to the datastore
@@ -107,11 +107,13 @@ Table datastore_versions::
 
 Table datastore_version_members::
 
-    Field               | Type        | Null | Key                          | Default | Extra|
-    -----------------------------------------------------------------------------------------|
-    id                  | varchar(36) | NO   | PRIMARY                      | NULL    |      |
-    datastore_version_id| varchar(36) | YES  | Foreign(datastore_version.id)| NULL    |      |
-    tenant_id           | varchar(36) | NO   |                              | NULL    |      |
+    Field               | Type        | Null | Key         | Default | Extra|
+    ------------------------------------------------------------------------|
+    id                  | varchar(36) | NO   | PRIMARY     | NULL    |      |
+    datastore_version_id| varchar(36) | YES  | Foreign [1] | NULL    |      |
+    tenant_id           | varchar(36) | NO   |             | NULL    |      |
+
+    [1] datastore_version_id is a Foreign-Key on datastore_version.id
 
 Public API
 ----------
@@ -175,12 +177,14 @@ Admin calls related to datastore version members
 
 2. Delete a member:
 
-  DELETE /{tenant_id}/mgmt/datastores/{datastore}/versions/{id}/members/{member_id}
+  DELETE
+  /{tenant_id}/mgmt/datastores/{datastore}/versions/{id}/members/{member_id}
 
 
 3. Get a member:
 
-   GET  /{tenant_id}/mgmt/datastores/{datastore}/versions/{id}/members/{member_id}
+   GET
+   /{tenant_id}/mgmt/datastores/{datastore}/versions/{id}/members/{member_id}
 
    Response::
 
@@ -236,6 +240,10 @@ Admin calls related to datastore version members
        ]
     }
 
+Public API Security
+-------------------
+
+None
 
 Internal API
 ------------

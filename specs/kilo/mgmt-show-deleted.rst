@@ -35,7 +35,7 @@ Use Cases
 * As a deployer, I want to be able to retrieve information about a deleted
   Trove instance.
 
-Proposed change
+Proposed Change
 ===============
 
 Support the ``?deleted=true/false`` query parameter in
@@ -70,6 +70,10 @@ Public API
 
 No public API changes.
 
+Public API Security
+-------------------
+
+No public API Security related changes.
 
 Management API
 --------------

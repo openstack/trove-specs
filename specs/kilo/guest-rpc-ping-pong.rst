@@ -34,7 +34,7 @@ Use Cases
 * As a deployer, I want to be able to determine whether RPC connectivity
   between the control-plane and a specific guest is broken.
 
-Proposed change
+Proposed Change
 ===============
 
 **Introduce**::
@@ -81,6 +81,11 @@ Public API
 ----------
 
 No public API changes.
+
+Public API Security
+-------------------
+
+No public API Security related changes.
 
 
 Management API

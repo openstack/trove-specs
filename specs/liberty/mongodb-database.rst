@@ -18,14 +18,14 @@ https://blueprints.launchpad.net/trove/+spec/mongodb-database
 Enable MongoDB database management functionality.
 
 
-Problem description
+Problem Description
 ===================
 
 The MongoDB datastore does not support database management features. Allowing
 the user to create, list, and delete databases through the API is essential.
 
 
-Proposed change
+Proposed Change
 ===============
 
 Three standard Trove commands will be enabled for MongoDB:
@@ -68,6 +68,16 @@ Public API Security
 No API Security changes.
 
 
+Python API
+----------
+
+None (empty section added after merging)
+
+CLI (python-troveclient)
+------------------------
+
+None (empty section added after merging)
+
 Internal API
 ------------
 
@@ -93,7 +103,8 @@ The Guest Agent will be changed to support the following manager functions:
    inserted into them. To ensure a database is created, a dummy document will
    be inserted but then deleted.
 
-2. list_databases - Run 'pymongo.MongoClient.database_names()' and return the resulting list.
+2. list_databases - Run 'pymongo.MongoClient.database_names()' and return the
+   resulting list.
 
 3. delete_database - Drop the database with
    'pymongo.MongoClient.drop_database("<dbname>")'. Users associated with the

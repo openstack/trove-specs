@@ -15,12 +15,12 @@ Redis Configuration Groups
 Launchpad Blueprint:
 https://blueprints.launchpad.net/trove/+spec/redis-configuration-groups
 
-Problem description
+Problem Description
 ===================
 
 The Redis guestagent currently does not support configuration groups.
 
-Proposed change
+Proposed Change
 ===============
 
 The patch set will implement configuration groups for Redis 3.0 or above.
@@ -161,6 +161,16 @@ Public API Security
 -------------------
 
 None
+
+Python API
+----------
+
+None (empty section added after merging)
+
+CLI (python-troveclient)
+------------------------
+
+None (empty section added after merging)
 
 Internal API
 ------------

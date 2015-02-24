@@ -7,7 +7,6 @@
  Sections of this template were taken directly from the Nova spec
  template at:
  https://github.com/openstack/nova-specs/blob/master/specs/template.rst
-..
 
 =======================================================
  Add instance name as parameter to various CLI commands
@@ -20,7 +19,7 @@ https://blueprints.launchpad.net/trove/+spec/add-instance-name-to-cli
 The proposal is to allow instance-name to be specified wherever instance-ID
 is currently used throughout the CLI.
 
-Problem description
+Problem Description
 ===================
 
 Currently, only the "trove show" command will take instance-ID or
@@ -30,7 +29,7 @@ the instance-ID be used. It would be helpful to customers to be able
 to use instance-ID or instance-name interchangeably throughtout the CLI.
 
 
-Proposed change
+Proposed Change
 ===============
 
 Allow instance-id or instance-name to be passed in for the following commands:
@@ -108,6 +107,11 @@ None
 
 Public API
 ----------
+
+None
+
+Public API Security
+-------------------
 
 None
 

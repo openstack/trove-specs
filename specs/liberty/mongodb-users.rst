@@ -18,20 +18,20 @@ https://blueprints.launchpad.net/trove/+spec/mongodb-users
 Enable MongoDB users management functionality.
 
 
-Problem description
+Problem Description
 ===================
 
 The MongoDB guest agent does not support users management features. Allowing
 the user to create, list, and delete users, enable/check root access, and
 grant/revoke user access through the API is essential.
 
-MongoDB users are unique to each database. A user is identified by both its name
-and database. Therefore the Trove actions requiring user names need
+MongoDB users are unique to each database. A user is identified by both its
+name and database. Therefore the Trove actions requiring user names need
 the value to be in the following string format: "<database>.<username>".
 MongoDB does not allow the following characters in the database name: /\. "$
 
 
-Proposed change
+Proposed Change
 ===============
 
 Calls to MongoDB will be done in Python via the PyMongo library, which is
@@ -135,6 +135,16 @@ Public API Security
 
 No API Security changes.
 
+
+Python API
+----------
+
+None (empty section added after merging)
+
+CLI (python-troveclient)
+------------------------
+
+None (empty section added after merging)
 
 Internal API
 ------------

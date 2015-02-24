@@ -15,12 +15,12 @@ MongoDB Configuration Groups
 Launchpad Blueprint:
 https://blueprints.launchpad.net/trove/+spec/mongodb-configuration-groups
 
-Problem description
+Problem Description
 ===================
 
 The MongoDB guestagent currently does not support configuration groups.
 
-Proposed change
+Proposed Change
 ===============
 
 The patch set will implement configuration groups for MongoDB 2.6 and above.
@@ -161,6 +161,16 @@ Public API Security
 -------------------
 
 None
+
+Python API
+----------
+
+None (empty section added after merging)
+
+CLI (python-troveclient)
+------------------------
+
+None (empty section added after merging)
 
 Internal API
 ------------

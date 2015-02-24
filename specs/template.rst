@@ -21,9 +21,9 @@
     above should remain.
 
 
-=================
-Title of the Spec
-=================
+============================
+Template for New Trove Specs
+============================
 
 .. If section numbers are desired, unindent this
     .. sectnum::
@@ -32,6 +32,7 @@ Title of the Spec
     .. contents::
 
 Introduction paragraph -- what is the motivation for the spec/blueprint?
+(Don't forget to change the title above to something more relevant.)
 
 Launchpad Blueprint:
 https://blueprints.launchpad.net/trove/+spec/name-of-blueprint
@@ -59,6 +60,20 @@ you should add the APIImpact flag to the commit message. Specifications with
 the APIImpact flag can be found with the following query:
 
 https://review.openstack.org/#/q/status:open+project:openstack/trove-specs+message:apiimpact,n,z
+
+
+Code snippets, etc. should be placed in appropriately marked blocks:
+
+.. code-block:: bash
+
+    # This is a bash command
+    ls -lf
+
+.. code-block:: python
+
+    # sample code
+    for count in range(1, 10):
+        print count
 
 
 Configuration
@@ -180,6 +195,11 @@ If the change has upgrade implications, also remember to:
 For more information about the DocImpact keyword, refer to
 https://wiki.openstack.org/wiki/Documentation/DocImpact
 
+Note: Documentation for the CLI commands are automatically generated
+from the help strings when a new version of the CLI is released, so
+a DocImpact keyword is not typically required for python-troveclient
+changes.
+
 
 Dependencies
 ============
@@ -214,12 +234,13 @@ References
 
 Please add any useful references here. You are not required to have any
 references. Moreover, this specification should still make sense when your
-references are unavailable. Examples of what you could include are:
+references are unavailable. Examples of what you could include are [1]_,
+[2]_, [3]_ and [4]_.
 
-* Links to mailing list or IRC discussions
+.. [1] Links to mailing list or IRC discussions
 
-* Links to notes from a summit session
+.. [2] Links to notes from a summit session
 
-* Links to relevant research, if appropriate
+.. [3] Links to relevant research, if appropriate
 
-* Anything else you feel it is worthwhile to refer to
+.. [4] Anything else you feel it is worthwhile to refer to

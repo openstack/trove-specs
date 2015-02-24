@@ -17,9 +17,10 @@ for single instances.
 
 https://blueprints.launchpad.net/trove/+spec/backups-single-instance-mongodb
 
-There is also a previous blueprint that incorporated single-instance backup [7]_.
+There is also a previous blueprint that incorporated single-instance backup
+[7]_.
 
-Problem description
+Problem Description
 ===================
 
 Backup and restore capability is important for eventually moving the MongoDB
@@ -30,7 +31,7 @@ to provide a standard backup and restore strategy for the MongoDB datastore,
 equivalent to the MySQLDump strategy for MySQL-based datastores.
 
 
-Proposed change
+Proposed Change
 ===============
 
 An initial simple backup and restore strategy for MongoDB will be implemented
@@ -62,6 +63,16 @@ Public API Security
 -------------------
 
 None.
+
+Python API
+----------
+
+None (empty section added after merging)
+
+CLI (python-troveclient)
+------------------------
+
+None (empty section added after merging)
 
 Internal API
 ------------
@@ -104,8 +115,8 @@ trove/guestagent/strategies/restore/experimental/mongo_impl.py
 Alternatives
 ------------
 
-As of version 3.0, MongoDB supports consistent, point-in-time snapshots with the
-use of --oplog to the mongodump command for single-server deployments.
+As of version 3.0, MongoDB supports consistent, point-in-time snapshots with
+the use of --oplog to the mongodump command for single-server deployments.
 Operations committed after the start of the mongodump command are logged to a
 separate file, and this file can be replayed with the --oplogReplay parameter
 to mongorestore. As previous versions of MongoDB, and sharded installations do

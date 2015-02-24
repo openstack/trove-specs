@@ -98,6 +98,16 @@ to a random Trove password which is then stored in a Trove-read-only
 file in '~/.cassandra/cqlshrc' which is also the default location for
 client settings.
 
+Python API
+----------
+
+None (empty section added after merging)
+
+CLI (python-troveclient)
+------------------------
+
+None (empty section added after merging)
+
 Internal API
 ------------
 

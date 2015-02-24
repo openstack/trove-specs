@@ -1,6 +1,8 @@
-This work is licensed under a Creative Commons Attribution 3.0 Unported License.
+..
+  This work is licensed under a Creative Commons Attribution 3.0
+  Unported License.
 
-http://creativecommons.org/licenses/by/3.0/legalcode
+  http://creativecommons.org/licenses/by/3.0/legalcode
 
 =========================
 Example Snippet Generator
@@ -37,6 +39,37 @@ is all of the API code that determines what the request and responses look like
 will get run just the same as if the tests had executed against a fully stood
 up Trove environment, with the advantage that certain UUIDs can be altered to
 avoid them changing with every test run.
+
+Configuration
+-------------
+
+None
+
+Database
+--------
+
+None
+
+Public API
+----------
+
+None
+
+Public API Security
+-------------------
+
+None
+
+Internal API
+------------
+
+None
+
+Guest Agent
+-----------
+
+None
+
 
 Data Model Impact
 -----------------
@@ -97,6 +130,12 @@ Assignee(s)
 Primary assignee:
     Tim Simpson
 
+Milestones
+----------
+
+Target Milestone for completion:
+    Kilo-1
+
 Work Items
 ----------
 * Implement the snippets generator.
@@ -116,7 +155,7 @@ NA
 Functional Tests
 ----------------
 NA
-`
+
 API Tests
 ---------
 NA

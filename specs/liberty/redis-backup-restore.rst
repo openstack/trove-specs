@@ -212,7 +212,7 @@ Milestones
 Target Milestone for completion:
   Liberty-1
 
-Work Item
+Work Items
 ----------
 
 The API calls for backup and restore need to be implemented.

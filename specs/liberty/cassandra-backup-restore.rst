@@ -181,7 +181,8 @@ Liberty-1
 Work Items
 ----------
 
-1. Implement functionality needed for resetting cluster name and superuser password.
+1. Implement functionality needed for resetting cluster name and superuser
+   password.
 2. Implement backup/restore API calls.
 
 Upgrade Implications

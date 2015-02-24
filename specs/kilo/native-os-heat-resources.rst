@@ -7,7 +7,7 @@
  Sections of this template were taken directly from the Nova spec
  template at:
  https://github.com/openstack/nova-specs/blob/master/specs/template.rst
-..
+
 
   This template should be in ReSTructured text. The filename in the git
   repository should match the launchpad URL, for example a URL of
@@ -23,7 +23,7 @@ Use native OS::* Heat resources for internal orchestration
 
 https://blueprints.launchpad.net/trove/+spec/native-os-heat-resources
 
-Problem description
+Problem Description
 ===================
 
 A far-fetching goal in Trove is to use OpenStack Orchestration service (Heat)
@@ -38,7 +38,7 @@ and HOT template format to fully leverage available OpenStack functionality,
 as they do not have to keep compatibility with AWS CloudFormation service.
 
 
-Proposed change
+Proposed Change
 ===============
 
 Align default Heat template with latest changes in Heat. That involves:
@@ -61,6 +61,11 @@ Public API
 ----------
 
 None
+
+Public API Security
+-------------------
+
+No public API Security related changes.
 
 Internal API
 ------------

@@ -49,6 +49,16 @@ Public API Security
 
 None
 
+Python API
+----------
+
+None (empty section added after merging)
+
+CLI (python-troveclient)
+------------------------
+
+None (empty section added after merging)
+
 Internal API
 ------------
 
