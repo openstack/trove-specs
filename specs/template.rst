@@ -128,6 +128,35 @@ done to implement it. Those parts might end up being done by different people,
 but we're mostly trying to understand the timeline for implementation.
 
 
+Upgrade Implications
+====================
+
+In this section, describe the upgrade implications (if any) of the
+proposed change. This could include such details as:
+
+* changes to location of files, or layout of the source tree if this
+  impacts configuration files,
+
+* invalidates old backups,
+
+* changes the CLI in a manner that could impact existing scripting,
+
+* eliminates or adds new notifications (events),
+
+* any changes that an operator or user must perform as part of the
+  upgrade.
+
+If the change has upgrade implications, also remember to:
+
+* add the DocImpact keyword to the commit, and
+
+* provide sufficient information in the commit message or in the
+  documentation bug that gets created.
+
+For more information about the DocImpact keyword, refer to
+https://wiki.openstack.org/wiki/Documentation/DocImpact
+
+
 Dependencies
 ============
 
