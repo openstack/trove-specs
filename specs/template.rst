@@ -1,39 +1,49 @@
 ..
- This work is licensed under a Creative Commons Attribution 3.0 Unported
- License.
+    This work is licensed under a Creative Commons Attribution 3.0 Unported
+    License.
 
- http://creativecommons.org/licenses/by/3.0/legalcode
+    http://creativecommons.org/licenses/by/3.0/legalcode
 
- Sections of this template were taken directly from the Nova spec
- template at:
- https://github.com/openstack/nova-specs/blob/master/specs/template.rst
+    Sections of this template were taken directly from the Nova spec
+    template at:
+    https://github.com/openstack/nova-specs/blob/master/specs/template.rst
+
 ..
+    This template should be in ReSTructured text. The filename in the git
+    repository should match the launchpad URL, for example a URL of
+    https://blueprints.launchpad.net/trove/+spec/awesome-thing should be named
+    awesome-thing.rst.
 
-  This template should be in ReSTructured text. The filename in the git
-  repository should match the launchpad URL, for example a URL of
-  https://blueprints.launchpad.net/trove/+spec/awesome-thing should be named
-  awesome-thing.rst.
+    Please do not delete any of the sections in this template.  If you
+    have nothing to say for a whole section, just write: None
 
-  Please do not delete any of the sections in this template.  If you
-  have nothing to say for a whole section, just write: None
+    Note: This comment may be removed if desired, however the license notice
+    above should remain.
 
-=======================
- Title of the blueprint
-=======================
 
-Include the URL of your launchpad blueprint:
+=================
+Title of the Spec
+=================
 
-https://blueprints.launchpad.net/trove/+spec/example
+.. If section numbers are desired, unindent this
+    .. sectnum::
 
-Introduction paragraph -- what is the motivation for the blueprint?
+.. If a TOC is desired, unindent this
+    .. contents::
 
-Problem description
+Introduction paragraph -- what is the motivation for the spec/blueprint?
+
+Launchpad Blueprint:
+https://blueprints.launchpad.net/trove/+spec/name-of-blueprint
+
+
+Problem Description
 ===================
 
 A detailed description of the problem.
 
 
-Proposed change
+Proposed Change
 ===============
 
 Here is where you cover the change you propose to make in detail. How do you
@@ -78,16 +88,30 @@ security on an existing API, provide details here.
 What are the expectations of, and implications to security on the
 Public API.
 
+Python API
+----------
+
+Does this change the Python API? If anything was removed, has it
+been properly marked as deprecated?
+
+CLI (python-troveclient)
+------------------------
+
+Will the Trove CLI need to be modified?  If the CLI will just implement
+the changes mentioned in the Python API section, it may be enough to
+just mention it here.
+
 Internal API
 ------------
 
-Does this change any internal messages between API and Task Manager or Task Manager to Guest?
+Does this change any internal messages between API and Task Manager or Task
+Manager to Guest?
 
 Guest Agent
 -----------
 
-Does this change behavior on the Guest Agent? If so, is it backwards compatible with API and Task Manager?
-
+Does this change behavior on the Guest Agent? If so, is it backwards compatible
+with API and Task Manager?
 
 Alternatives
 ------------
@@ -102,8 +126,8 @@ Implementation
 Assignee(s)
 -----------
 
-Who is leading the writing of the code? Or is this a blueprint where you're
-throwing it out there to see who picks it up?
+Who is leading the writing of the code? Or is this a spec where you're throwing
+it out there to see who picks it up?
 
 If more than one person is working on the implementation, please designate the
 primary author and contact.
@@ -112,13 +136,13 @@ Primary assignee:
   <launchpad-id or None>
 
 Can list additional ids if they intend on doing substantial implementation work
-on this blueprint.
+on this spec.
 
 Milestones
 ----------
 
 Target Milestone for completion:
-  eg. Kilo-2
+  eg. Liberty-1
 
 Work Items
 ----------
