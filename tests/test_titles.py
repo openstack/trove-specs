@@ -78,6 +78,10 @@ class TestTitles(testtools.TestCase):
             # web addresses and long file system paths.
             if line.count('/') > 1:
                 continue
+            # ignore lines that start with '+' or '|'
+            # this should exclude tables and lists
+            if re.match('[|+]', line.lstrip()):
+                continue
             self.assertTrue(
                 len(line) < line_limit + 1,
                 msg="%s:%d: Line limited to a maximum of %d characters." %
