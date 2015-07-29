@@ -50,49 +50,10 @@ The crux of this blueprint is to move the majority of the existing MySQL
 manager code into a new set of abstract classes, with stub subclasses for
 MySQL, Percona and MariaDB datastores inheriting from them.
 
-Due to the recent reorganization of datastores into a directory structure based
-on maturity, there are two alternatives that we have considered.
+**Maturity-Aware Reorganization**
 
-**Maturity-Agnostic**
-
-The first alternative is for base, inherited code to be agnostic of maturity.
+The base mysql code will reside in the current mysql datastore directory.
 This would result in
-
-* The creation of a ``trove/guestagent/datastore/base`` directory, that would
-  contain a directory with abstract classes for each "base" system. For now,
-  this would be only MySQL, but in the future could also include systems with
-  a number of variants/forks such as PostgreSQL.
-* The majority of the current MySQL datastore code moving to
-  ``trove/guestagent/datastore/base/mysql`` , but the classes made abstract.
-* The existing MySQL datastore classes remaining where they are, but largely
-  replaced with stub implementations that inherit from the new base classes.
-
-The resulting file and directory structure would change from::
-
-     trove/guestagent/datastore/mysql/manager.py
-     trove/guestagent/datastore/mysql/service.py
-
-to::
-
-     trove/guestagent/datastore/base/mysql/manager.py
-     trove/guestagent/datastore/base/mysql/service.py
-     trove/guestagent/datastore/mysql/manager.py
-     trove/guestagent/datastore/mysql/service.py
-     trove/guestagent/datastore/experimental/mariadb/manager.py
-     trove/guestagent/datastore/experimental/mariadb/service.py
-     trove/guestagent/datastore/experimental/percona/manager.py
-     trove/guestagent/datastore/experimental/percona/service.py
-
-The benefit of this approach is a clean separation of the abstract code common
-to variants of a datastore and the datastore implementations themselves. A
-drawback is that it fits somewhat awkwardly with our maturity-based
-reorganization, especially if a future base system has only experimental
-datastores as subclasses.
-
-**Maturity-Aware**
-
-The second alternative is for the base mysql code to reside in the current
-mysql datastore directory. This would result in
 
 * The creation of new base implementations for the manager and service
   modules in the ``trove/guestagent/datastore/mysql`` directory
@@ -120,12 +81,23 @@ This approach has the benefit of less potential confusion about the maturity
 level of the base code. However, it is not as not as clean an organization:
 MySQL CE is treated as both a base system and an implementing datastore.
 
-In both cases, a pass through the MySQL manager code would be done to identify
-methods that should be made abstract. These methods would then be brought
-"down" into the subclasses.
+A pass through the MySQL manager code will be done to identify methods that
+should be made abstract. These methods would then be brought "down" into the
+subclasses.
 
 This blueprint does *not* attempt to create optimized MariaDB or Percona
 datastores, but rather to lay the groundwork for their creation.
+
+**Service class dependency injection**
+
+The service.py module contains a number of classes, such as MySqlAppStatus,
+that are used in the manager.py module. These are currently tightly coupled:
+the mysql manager has an explicit import for each.
+
+The make it possible to extend these classes arbitrarily for different
+datastores, and eliminate the tight-coupling, the old references will be
+refactored into class properties, which are to be injected by the concrete
+manager class.
 
 **Strategy consolidation**
 
