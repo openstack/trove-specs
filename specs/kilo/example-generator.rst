@@ -94,7 +94,7 @@ None.
 Performance Impact
 ------------------
 The snippet generation will run in mere seconds as part of Tox. There will be
-no noticable impact on the developers of Trove.
+no noticeable impact on the developers of Trove.
 
 Other Deployer Impact
 ---------------------

@@ -34,7 +34,7 @@ It is proposed that we create three groups of datastores as described in detail 
 
 In each release, beginning with the Kilo release, each datastore will be given a classification that will be one of the values listed above based strictly on its adherence to the requirements for each of those classifications.
 
-The classifications will be inclusive; i.e. a datastore that meets the "technical preview" requirements must also meet all the requirements for "experimental", and a datastore taht meets the "stable" requirements must also meet all the requirements for "technical preview".
+The classifications will be inclusive; i.e. a datastore that meets the "technical preview" requirements must also meet all the requirements for "experimental", and a datastore that meets the "stable" requirements must also meet all the requirements for "technical preview".
 
 Introduce a classification of strategies
 ----------------------------------------

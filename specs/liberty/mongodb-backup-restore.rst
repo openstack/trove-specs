@@ -26,7 +26,7 @@ Problem Description
 Backup and restore capability is important for eventually moving the MongoDB
 datastore out of the "experimental" stage. MongoDB provides two utilities,
 mongodump and mongorestore, which work with BSON-based files: efficient, binary
-equivalents of the JSON data that MongoDB manages. These utilties will be used
+equivalents of the JSON data that MongoDB manages. These utilities will be used
 to provide a standard backup and restore strategy for the MongoDB datastore,
 equivalent to the MySQLDump strategy for MySQL-based datastores.
 
