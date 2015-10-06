@@ -20,7 +20,7 @@ import testtools
 
 class TestTitles(testtools.TestCase):
 
-    current_release = 'liberty'
+    current_release = 'mitaka'
 
     def _get_title(self, section_tree):
         section = {
@@ -68,14 +68,20 @@ class TestTitles(testtools.TestCase):
 
     def _check_lines_wrapping(self, tpl, raw):
         for i, line in enumerate(raw.split("\n")):
+            # allow lines that start with 4 spaces to have 4 extra characters
+            # This is to facilitate not having to reformat code blocks just for
+            # an arbitrary line limit
+            line_limit = 79
+            if line.startswith('    '):
+                line_limit += 4
             # ignore lines that have more than one '/' - this will exclude
             # web addresses and long file system paths.
             if line.count('/') > 1:
                 continue
             self.assertTrue(
-                len(line) < 80,
-                msg="%s:%d: Line limited to a maximum of 79 characters." %
-                (tpl, i+1))
+                len(line) < line_limit + 1,
+                msg="%s:%d: Line limited to a maximum of %d characters." %
+                (tpl, i+1, line_limit))
 
     def _check_no_cr(self, tpl, raw):
         matches = re.findall('\r', raw)
