@@ -239,3 +239,9 @@ References
 .. [4] DB2 backing up to named pipe: https://www-01.ibm.com/support/knowledgecenter/SSEPGG_9.5.0/com.ibm.db2.luw.admin.ha.doc/doc/t0006202.html
 
 .. [5] DB2 Restore procedure: http://www-01.ibm.com/support/knowledgecenter/SSEPGG_9.7.0/com.ibm.db2.luw.admin.ha.doc/doc/c0006237.html
+
+
+Appendix
+========
+
+None

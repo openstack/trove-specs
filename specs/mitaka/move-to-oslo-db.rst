@@ -132,3 +132,8 @@ References
 .. [1] `Nova's migration commit <https://review.openstack.org/#/c/101901/>`_.
 .. [2] `oslo_db configuration options <http://docs.openstack.org/developer/oslo.db/opts.html#database?>`_.
 .. [3] `Associated bug on Launchpad <https://bugs.launchpad.net/trove/+bug/1481493>`_.
+
+Appendix
+========
+
+None

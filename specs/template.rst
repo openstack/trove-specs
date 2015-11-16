@@ -244,3 +244,9 @@ references are unavailable. Examples of what you could include are [1]_,
 .. [3] Links to relevant research, if appropriate
 
 .. [4] Anything else you feel it is worthwhile to refer to
+
+
+Appendix
+========
+
+Any additional technical information and data.
