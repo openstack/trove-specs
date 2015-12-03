@@ -6,7 +6,7 @@
 
     Sections of this template were taken directly from the Nova spec
     template at:
-    https://github.com/openstack/nova-specs/blob/master/specs/template.rst
+    https://github.com/openstack/nova-specs/blob/master/specs/juno-template.rst
 
 ..
     This template should be in ReSTructured text. The filename in the git
