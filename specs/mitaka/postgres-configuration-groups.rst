@@ -121,6 +121,13 @@ Alternatives
 
 None
 
+
+Dashboard Impact (UX)
+=====================
+
+TBD (section added after approval)
+
+
 Implementation
 ==============
 

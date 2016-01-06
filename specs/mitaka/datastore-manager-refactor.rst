@@ -479,6 +479,12 @@ useful, it could be added in addition to the proposed method as a means of
 notification only.
 
 
+Dashboard Impact (UX)
+=====================
+
+TBD (section added after approval)
+
+
 Implementation
 ==============
 

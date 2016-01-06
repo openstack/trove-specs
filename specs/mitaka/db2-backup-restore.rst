@@ -176,6 +176,12 @@ Trove. Once users can configure other logging options like archive logging,
 online backup can be implemented.
 
 
+Dashboard Impact (UX)
+=====================
+
+TBD (section added after approval)
+
+
 Implementation
 ==============
 

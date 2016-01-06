@@ -235,6 +235,12 @@ something potentially unexpected and not consistent with the approach to
 incremental backups on other datastores.
 
 
+Dashboard Impact (UX)
+=====================
+
+TBD (section added after approval)
+
+
 Implementation
 ==============
 

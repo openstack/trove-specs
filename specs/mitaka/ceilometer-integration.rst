@@ -373,6 +373,12 @@ the direction of allowing the guest to operate in an isolated
 environment.
 
 
+Dashboard Impact (UX)
+=====================
+
+TBD (section added after approval)
+
+
 Implementation
 ==============
 

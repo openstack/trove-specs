@@ -238,6 +238,13 @@ Slony provides master-slave replication using table-level triggers. It has
 greater overhead on the master database than standard streaming replication,
 but has the benefit of table-level granularity.
 
+
+Dashboard Impact (UX)
+=====================
+
+TBD (section added after approval)
+
+
 Implementation
 ==============
 

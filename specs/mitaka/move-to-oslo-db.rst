@@ -84,6 +84,13 @@ Alternatives
 Determine the root cause of the database connection mismanagement [3]_.
 Previous efforts were unsuccessful.
 
+
+Dashboard Impact (UX)
+=====================
+
+TBD (section added after approval)
+
+
 Implementation
 ==============
 

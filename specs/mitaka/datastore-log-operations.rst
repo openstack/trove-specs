@@ -786,6 +786,12 @@ Trove user.  This could be enhanced (in the future) to have the admin user
 provide a tenant that could be used to host the log containers.
 
 
+Dashboard Impact (UX)
+=====================
+
+TBD (section added after approval)
+
+
 Implementation
 ==============
 

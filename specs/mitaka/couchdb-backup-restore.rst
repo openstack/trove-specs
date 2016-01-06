@@ -140,6 +140,13 @@ When replication is enabled for a database from a source to target system, it
 uses the document revision numbers to track differences and detect conflicts
 and resolve it.
 
+
+Dashboard Impact (UX)
+=====================
+
+TBD (section added after approval)
+
+
 Implementation
 ==============
 

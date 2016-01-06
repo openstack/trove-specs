@@ -198,6 +198,13 @@ Alternatives
 
 Not to support grow and shrink of a pxc cluster.
 
+
+Dashboard Impact (UX)
+=====================
+
+TBD (section added after approval)
+
+
 Implementation
 ==============
 

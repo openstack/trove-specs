@@ -135,6 +135,25 @@ This is an optional section, where it does apply we'd just like a demonstration
 that some thought has been put into why the proposed approach is the best one.
 
 
+Dashboard Impact (UX)
+=====================
+
+This section should detail how the dashboard (Horizon) should display the new
+changes, if relevant.  For example, if adding cluster support for Redis, this
+section could say::
+
+    Enabling Redis clustering will simply reuse the existing Launch Cluster
+    dialog. The Redis datastore will be in the datastore pulldown. When the
+    user selects Redis the Launch Cluster dialog fields will dynamically
+    change to display the default Launch Cluster fields.
+
+    There will be a new detail overview panel with Redis cluster specific
+    information.
+
+    There are no additional actions to be added at this point for the Redis
+    cluster.
+
+
 Implementation
 ==============
 
@@ -148,6 +167,9 @@ If more than one person is working on the implementation, please designate the
 primary author and contact.
 
 Primary assignee:
+  <launchpad-id or None>
+
+Dashboard assignee:
   <launchpad-id or None>
 
 Can list additional ids if they intend on doing substantial implementation work
