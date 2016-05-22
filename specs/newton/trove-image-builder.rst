@@ -38,8 +38,8 @@ https://blueprints.launchpad.net/trove-image-builder/+spec/trove-image-build-rep
 Problem Description
 ===================
 
-Trove users (new and experienced) typically run into problems in the last leg of
-a datastore setup, that is the generation and loading of a compatible image
+Trove users (new and experienced) typically run into problems in the last leg
+of a datastore setup, that is the generation and loading of a compatible image
 including the database and the Trove guestagent. There are significant
 variations among the GNU/Linux distros, their native database packages, vendor
 packages and assumptions built into the current Trove codebase. These
@@ -109,15 +109,15 @@ Redis       Yes       TBD
 Vertica     Yes       TBD
 ==========  ======  ========
 
-NB: Datastores marked TBD for CentOS 7 currently lack public community yum repos
-for install.
+NB: Datastores marked TBD for CentOS 7 currently lack public community yum
+repos for install.
 
 The image build process should be independent of any specific OpenStack python
 or other dependencies save for the DIB tool. Ideally, this new repo would not
 be branched with OpenStack releases, just the same as trove-integration is not
-branched today. However, trove-integration does rely on per-release requirements
-files for pip. These are essentially trimmed down requirements to service a pip
-install of the guestagent code. Some possible solutions:
+branched today. However, trove-integration does rely on per-release
+requirements files for pip. These are essentially trimmed down requirements to
+service a pip install of the guestagent code. Some possible solutions:
 
 - fetch the existing trove-integration requirement files when doing a pip
   install in the new builder
@@ -222,7 +222,8 @@ Newton-1
 Work Items
 ----------
 
-- Have PTL create new project repository for image creation tool and supporting data files.
+- Have PTL create new project repository for image creation tool and supporting
+  data files.
 - Develop and install artifacts into repository.
 - Update existing docs to guide users to new image creation tool.
 

@@ -11,7 +11,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import glob
+import os
 import re
 
 import docutils.core
@@ -19,8 +19,6 @@ import testtools
 
 
 class TestTitles(testtools.TestCase):
-
-    current_release = 'mitaka'
 
     def _get_title(self, section_tree):
         section = {
@@ -107,8 +105,19 @@ class TestTitles(testtools.TestCase):
         spec = docutils.core.publish_doctree(template)
         template_titles = self._get_titles(spec)
 
-        files = glob.glob("specs/%s/*" % self.current_release)
+        # Get the current release directory - since we're moving up
+        # alphabetically, grab the highest name in the spec directory
+        generator = os.walk('specs')
+        dirname, subdirs, files = generator.next()
+        current_release = max(subdirs)
+        found = False
+        for dirname, subdirs, files in generator:
+            if dirname.endswith("/" + current_release):
+                found = True
+                break
+        self.assertTrue(found, "No specs found.")
         for filename in files:
+            filename = "%s/%s" % (dirname, filename)
             self.assertTrue(filename.endswith(".rst"),
                             "spec's file must uses 'rst' extension.")
             with open(filename) as f:
