@@ -12,21 +12,13 @@ Contents:
 
    specs/*
 
-Kilo approved specs:
+Newton approved specs:
 
 .. toctree::
    :glob:
    :maxdepth: 1
 
-   specs/kilo/*
-
-Liberty approved specs:
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-
-   specs/liberty/*
+   specs/newton/*
 
 Mitaka approved specs:
 
@@ -36,13 +28,21 @@ Mitaka approved specs:
 
    specs/mitaka/*
 
-Newton approved specs:
+Liberty approved specs:
 
 .. toctree::
    :glob:
    :maxdepth: 1
 
-   specs/newton/*
+   specs/liberty/*
+
+Kilo approved specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/kilo/*
 
 ======================
 Repository Information
