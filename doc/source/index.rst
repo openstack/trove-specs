@@ -12,6 +12,15 @@ Contents:
 
    specs/*
 
+Ocata approved specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :hidden:
+
+   specs/ocata/*
+
 Newton approved specs:
 
 .. toctree::
