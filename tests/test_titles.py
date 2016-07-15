@@ -80,6 +80,9 @@ class TestTitles(testtools.TestCase):
             # this should exclude tables and lists
             if re.match('[|+]', line.lstrip()):
                 continue
+            # ignore lines that contain '<% $' as it's probably yaml
+            if '<% $' in line:
+                continue
             self.assertTrue(
                 len(line) < line_limit + 1,
                 msg="%s:%d: Line limited to a maximum of %d characters." %
