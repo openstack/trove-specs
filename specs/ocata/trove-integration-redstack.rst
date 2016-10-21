@@ -172,7 +172,7 @@ Proposed End State
   activate-trove-image.bash) will be provided. The first will build
   the image for you. The second will load it into glance and register
   it with Trove, the third will set a specified datastore/version to
-  the the default.
+  the default.
 
 * The trove devstack plugin will have additional code in the
   stack/post-config phase that will configure the Trove test
