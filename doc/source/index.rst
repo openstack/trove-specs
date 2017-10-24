@@ -20,12 +20,20 @@ Queens approved specs:
 
    specs/queens/*
 
+
+Pike approved specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/pike/*
+
 Ocata approved specs:
 
 .. toctree::
    :glob:
    :maxdepth: 1
-   :hidden:
 
    specs/ocata/*
 

@@ -22,7 +22,7 @@
 
 
 ============================
-Sample Ocata Spec for Trove
+Sample Pike Spec for Trove
 ============================
 
 .. If section numbers are desired, unindent this
