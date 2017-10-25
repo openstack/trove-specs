@@ -12,6 +12,14 @@ Contents:
 
    specs/*
 
+Queens approved specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/queens/*
+
 Ocata approved specs:
 
 .. toctree::
