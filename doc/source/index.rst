@@ -12,6 +12,15 @@ Contents:
 
    specs/*
 
+Rocky approved specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/rocky/*
+
+
 Queens approved specs:
 
 .. toctree::
