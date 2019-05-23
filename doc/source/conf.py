@@ -23,9 +23,15 @@ sys.path.insert(0, os.path.abspath('../..'))
 extensions = [
     'sphinx.ext.autodoc',
     #'sphinx.ext.intersphinx',
-    'oslosphinx',
+    'openstackdocstheme',
     'yasfb',
 ]
+
+
+# openstackdocstheme options
+repository_name = 'openstack/trove-specs'
+bug_project = 'trove-specs'
+bug_tag = 'doc'
 
 # Optionally allow the use of sphinxcontrib.spelling to verify the
 # spelling of the documents.
@@ -70,6 +76,7 @@ pygments_style = 'sphinx'
 # html_theme_path = ["."]
 # html_theme = '_theme'
 # html_static_path = ['static']
+html_theme = 'openstackdocs'
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = '%sdoc' % project
