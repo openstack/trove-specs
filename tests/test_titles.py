@@ -111,7 +111,7 @@ class TestTitles(testtools.TestCase):
         # Get the current release directory - since we're moving up
         # alphabetically, grab the highest name in the spec directory
         generator = os.walk('specs')
-        dirname, subdirs, files = generator.next()
+        dirname, subdirs, files = next(generator)
         current_release = max(subdirs)
         found = False
         for dirname, subdirs, files in generator:
