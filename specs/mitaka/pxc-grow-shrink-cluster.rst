@@ -266,7 +266,7 @@ References
 
 .. [1] https://www.percona.com/doc/percona-xtradb-cluster/5.5/howtos/ubuntu_howto.html
 
-.. [2] https://www.percona.com/doc/percona-xtradb-cluster/5.5/manual/bootstrap.html#bootstrap
+https://www.percona.com/doc/percona-xtradb-cluster/5.5/manual/bootstrap.html#bootstrap
 
 Appendix
 ========

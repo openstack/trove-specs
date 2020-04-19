@@ -525,7 +525,7 @@ and mount_point parameters with a new *device_config* list.  The
 *device_config* will supply information about the number and types of
 volumes to be configured on the guest:
 
-.. code-block:: json
+.. code-block:: none
 
     [
         {

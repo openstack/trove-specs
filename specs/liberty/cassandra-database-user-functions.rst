@@ -29,7 +29,7 @@ Proposed Change
 ===============
 
 The patch set will implement the following keyspace and user related
-functionality for Cassandra 2.1 datastore:
+functionality for Cassandra 2.1 [2]_ datastore:
 
 User Functions:
 
@@ -116,7 +116,8 @@ None
 Guest Agent
 -----------
 
-The current implementation uses the CQLSH command line client to interface with
+The current implementation uses the CQLSH [3]_ command line client to
+interface with
 the underlying database. Trove talks to the CQLSH client via the available
 shell and relies on parsing the output of the client to determine the current
 state of the datastore and status of the last operation.

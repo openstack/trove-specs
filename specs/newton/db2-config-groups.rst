@@ -182,9 +182,9 @@ Appendix
 ========
 
 The database manager configuration parameters have been listed below. For a
-detailed description of each parameter, please refer[1]. The parameters listed
+detailed description of each parameter, please refer[1]_. The parameters listed
 below are the ones that are relevant for the DB2 Express-C version. The link
-referenced in [1] gives a complete list of parameters for the DB2 enterprise
+referenced in [1]_ gives a complete list of parameters for the DB2 enterprise
 edition::
 
     AGENTPRI

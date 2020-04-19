@@ -279,7 +279,8 @@ None.
 Dependencies
 ============
 
-pg_basebackup incremental backup and restore strategy for PostgreSQL. [10]_
+pg_basebackup incremental backup and restore strategy for PostgreSQL.
+[3]_ [10]_
 
 Testing
 =======
@@ -310,11 +311,11 @@ References
 
 .. [4] http://www.postgresql.org/docs/9.0/static/wal-configuration.html
 
-.. [5] http://www.postgresql.org/docs/9.4/static/warm-standby-failover.html
+[5] http://www.postgresql.org/docs/9.4/static/warm-standby-failover.html
 
 .. [6] http://www.postgresql.org/docs/current/static/sql-createrole.html
 
-.. [7] http://www.postgresql.org/message-id/flat/CA+TgmobWQJ-GCa_tWUc4=80A
+[7] http://www.postgresql.org/message-id/flat/CA+TgmobWQJ-GCa_tWUc4=80A
        1RJ2_+Rq3w_MqaVguk_q018dqw@mail.gmail.com#CA+TgmobWQJ-GCa_tWUc4=80A1RJ
        2_+Rq3w_MqaVguk_q018dqw@mail.gmail.com
 

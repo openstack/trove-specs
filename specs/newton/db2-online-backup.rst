@@ -70,8 +70,8 @@ they are archived. Archive logging allows users to restore databases by roll
 forwarding to a particular point in time or a point before failure. Hence,
 users can restore a database from a backup image and roll forward to a
 particular point using logs thus getting it to a consistent state. For an
-introduction to archive logging, please refer [1] and for an overview of how
-transactional logging works in DB2, please refer [2].
+introduction to archive logging, please refer [1]_ and for an overview of how
+transactional logging works in DB2, please refer [2]_.
 
 To enable full online backup for Trove, the following steps need to be taken:
 
@@ -132,7 +132,7 @@ in a consistent state.
 
     This command will roll forward the restored database to a consistent state
     by applying the archive logs. To see more details on the ROLLFORWARD
-    command, please refer [3].
+    command, please refer [3]_.
 
 Configuration
 -------------

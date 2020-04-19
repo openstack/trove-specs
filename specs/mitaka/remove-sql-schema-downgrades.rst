@@ -151,11 +151,11 @@ None
 References
 ==========
 
-.. [1] https://review.openstack.org/#/c/152337/
-.. [2] https://review.openstack.org/#/c/167554/2
-.. [3] https://review.openstack.org/#/c/167834/
-.. [4] https://review.openstack.org/#/c/167189/2
-.. [5] https://review.openstack.org/#/c/165740/
+* https://review.openstack.org/#/c/152337/
+* https://review.openstack.org/#/c/167554/2
+* https://review.openstack.org/#/c/167834/
+* https://review.openstack.org/#/c/167189/2
+* https://review.openstack.org/#/c/165740/
 
 
 Appendix

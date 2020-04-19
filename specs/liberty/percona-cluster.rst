@@ -680,6 +680,9 @@ List of other cluster related blueprints. These blueprints will likely cause
 conflicts with changes.
 
 .. [1] bp/cluster-scaling: https://blueprints.launchpad.net/trove/+spec/cluster-scaling
-.. [2] bp/mysql-manager-refactor: https://blueprints.launchpad.net/trove/+spec/mysql-manager-refactor
-.. [3] bp/cluster-user-management: https://blueprints.launchpad.net/trove/+spec/cluster-user-management
 .. [4] percona-xtradb-with-replica: https://blueprints.launchpad.net/trove/+spec/percona-add-replica-of-cluster
+
+bp/mysql-manager-refactor:
+    https://blueprints.launchpad.net/trove/+spec/mysql-manager-refactor
+bp/cluster-user-management:
+    https://blueprints.launchpad.net/trove/+spec/cluster-user-management

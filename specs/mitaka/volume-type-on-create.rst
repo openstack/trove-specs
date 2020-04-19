@@ -78,13 +78,13 @@ structure accepted by the instance and cluster create API calls.
 
 API payload defining a volume of size '1' and Cinder volume type 'my-type-1':
 
-.. code-block:: json
+.. code-block:: none
 
     'volume': {'size': '1', 'type': 'my-type-1'}
 
 API payload defining a volume of size '1' and no Cinder volume type:
 
-.. code-block:: json
+.. code-block:: none
 
     'volume': {'size': '1', 'type': None}
     'volume': {'size': '1'}

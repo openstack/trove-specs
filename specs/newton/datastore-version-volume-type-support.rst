@@ -32,7 +32,7 @@ datastore-version in the same way that they can limit Nova flavors.
 Proposed Change
 ===============
 
-The implentation that associated flavors with datastores [1][2]
+The implentation that associated flavors with datastores [1]_ [2]_
 created a generic framework that provided for the specification of
 datastore-version-metadata. This metadata was stored into a table in
 the database called datastore_version_metadata.

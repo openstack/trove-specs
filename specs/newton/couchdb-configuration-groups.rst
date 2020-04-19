@@ -153,7 +153,7 @@ The datastore documentation should be updated to reflect the enabled features.
 References
 ==========
 
-.. [1] Documentation on CouchDB configuration: http://docs.couchdb.org/en/stable/config/index.html
+* Documentation on CouchDB configuration: http://docs.couchdb.org/en/stable/config/index.html
 
 Appendix
 ========

@@ -297,11 +297,11 @@ clustering support.
 References
 ==========
 
-.. [1] Couchbase cluster management: http://docs.couchbase.com/admin/admin/Tasks/cluster-management.html
+* Couchbase cluster management: http://docs.couchbase.com/admin/admin/Tasks/cluster-management.html
 
-.. [2] Couchbase CLI reference: http://developer.couchbase.com/documentation/server/4.0/cli/cli-intro.html
+* Couchbase CLI reference: http://developer.couchbase.com/documentation/server/4.0/cli/cli-intro.html
 
-.. [3] Couchbase cluster API: http://docs.couchbase.com/admin/admin/REST/rest-cluster-intro.html
+* Couchbase cluster API: http://docs.couchbase.com/admin/admin/REST/rest-cluster-intro.html
 
 
 Appendix

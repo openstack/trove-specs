@@ -255,5 +255,5 @@ The datastore documentation should be updated to reflect the enabled features.
 References
 ==========
 
-.. [1] Documentation on Cassandra 2.1: http://docs.datastax.com/en/cassandra/2.1/cassandra/gettingStartedCassandraIntro.html
-.. [2] Documentation on Cassandra 2.1 configuration properties: http://docs.datastax.com/en/cassandra/2.1/cassandra/configuration/configTOC.html
+Documentation on Cassandra 2.1: http://docs.datastax.com/en/cassandra/2.1/cassandra/gettingStartedCassandraIntro.html
+Documentation on Cassandra 2.1 configuration properties: http://docs.datastax.com/en/cassandra/2.1/cassandra/configuration/configTOC.html

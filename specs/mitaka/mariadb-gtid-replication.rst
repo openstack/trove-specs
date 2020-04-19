@@ -59,7 +59,7 @@ in order to support replication for MariaDB.
 The SQL issued to set a new empty slave server and replicate all of the
 master's binlog from the start is as follows [2]_:
 
-.. code-block:: sql
+.. code-block:: none
 
     CHANGE MASTER TO master_host="%(host)s", master_port=%(port)s, \
     master_user="%(user)s", master_password="%(password)s", \
