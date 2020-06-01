@@ -29,9 +29,10 @@ extensions = [
 
 
 # openstackdocstheme options
-repository_name = 'openstack/trove-specs'
-bug_project = 'trove-specs'
-bug_tag = 'doc'
+openstackdocs_repo_name = 'openstack/trove-specs'
+openstackdocs_auto_name = False
+openstackdocs_bug_project = 'trove-specs'
+openstackdocs_bug_tag = 'doc'
 
 # Optionally allow the use of sphinxcontrib.spelling to verify the
 # spelling of the documents.
@@ -67,7 +68,7 @@ add_function_parentheses = True
 add_module_names = True
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = 'native'
 
 # -- Options for HTML output --------------------------------------------------
 
